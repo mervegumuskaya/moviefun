@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/samar.css">
     <script src="./js/bootstrap.js"></script>
     <title>Movie Fun</title>
 </head>
@@ -21,7 +23,62 @@
                 <li class="nav-item"><a class="nav-link px-3" href="./contact.html">CONTACT US</a class="nav-link"></li class="nav-item">
             </ul>
         </nav>
+        <img id="HeaderImg" src="./images/header.gif">
     </header>
+    <section id="photoSec">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="All-tab" data-toggle="tab" href="#All" role="tab" aria-controls="All" aria-selected="true">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="Horror-tab" data-toggle="tab" href="#Horror" role="tab" aria-controls="Horror" aria-selected="false">Horror</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="Romance-tab" data-toggle="tab" href="#Romance" role="tab" aria-controls="Romance" aria-selected="false">Romance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="SciFic-tab" data-toggle="tab" href="#SciFic" role="tab" aria-controls="SciFic" aria-selected="false">Science Fiction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="Anime-tab" data-toggle="tab" href="#Anime" role="tab" aria-controls="Anime" aria-selected="false">Animation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="Thrill-tab" data-toggle="tab" href="#Thrill" role="tab" aria-controls="Thrill" aria-selected="false">Thrillers</a>
+                </li>
+        </ul>
+        <div class="tab-content container-fluid" id="myTabContent">
+            <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
+                <div class="row">
+                    
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Horror" role="tabpanel" aria-labelledby="Horror-tab">
+                <div class="row">
+                   <p>sjiADJ</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Romance" role="tabpanel" aria-labelledby="Romance-tab">
+                <div class="row">
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="SciFic" role="tabpanel" aria-labelledby="SciFic-tab">
+                <div class="row">
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Anime" role="tabpanel" aria-labelledby="Anime-tab">
+                <div class="row">
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="Thrill" role="tabpanel" aria-labelledby="Thrill-tab">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
