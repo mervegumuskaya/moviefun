@@ -6,6 +6,7 @@ li.active  > a {
     border-bottom:1px solid gray;
  }
 
-.bg-2 {
+.bg-color-2 {
     background-color: rgb(237,241,245);
 }
+
