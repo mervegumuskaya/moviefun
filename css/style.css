@@ -4,6 +4,14 @@
     padding:0;
 }
 
+body {
+    font-family: "Open Sans";
+    color: #737373;
+}
 li.active  > a {
     border-bottom:1px solid gray;
  }
+
+.bg-color-2 {
+    background-color: rgb(237,241,245);
+}

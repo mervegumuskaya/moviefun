@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/samar.css">
-    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/responsive.css">
+
     <title>Movie Fun</title>
 </head>
 <body>
     <header>
+        <!--The nav bar-->
         <nav class="navbar navbar-expand-sm navbar-light bg-white py-4 fixed border-bottom">
             <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo"></a>
             <ul class="navbar navbar-nav ml-auto">
@@ -23,9 +27,24 @@
                 <li class="nav-item"><a class="nav-link px-3" href="./contact.html">CONTACT US</a class="nav-link"></li class="nav-item">
             </ul>
         </nav>
+        <!--Gif at the header-->
         <img id="HeaderImg" src="./images/header.gif">
     </header>
+   
     <section id="photoSec">
+        <!--For smaller screens, dropdown of genres instead of nav tabs-->
+        <div class="forDrop dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Genres</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" data-toggle="tab" href="#All">All</a>
+                    <a class="dropdown-item" data-toggle="tab" href="#Horror">Horror</a>
+                    <a class="dropdown-item" data-toggle="tab" href="#Romance">Romance</a>
+                    <a class="dropdown-item" data-toggle="tab" href="#SciFic">SciFic</a>
+                    <a class="dropdown-item" data-toggle="tab" href="#Anime">Anime</a>
+                </div>
+        </div>
+
+        <!--For larger screens there will be nav tab for each genre-->
         <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="All-tab" data-toggle="tab" href="#All" role="tab" aria-controls="All" aria-selected="true">All</a>
@@ -42,42 +61,235 @@
                 <li class="nav-item">
                     <a class="nav-link" id="Anime-tab" data-toggle="tab" href="#Anime" role="tab" aria-controls="Anime" aria-selected="false">Animation</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="Thrill-tab" data-toggle="tab" href="#Thrill" role="tab" aria-controls="Thrill" aria-selected="false">Thrillers</a>
-                </li>
         </ul>
+        <!--The pictures of all movies for larger screens, 2 pic per line on small, 4 on mid-->
         <div class="tab-content container-fluid" id="myTabContent">
             <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
-                <div class="row">
-                    
-                </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                    </div>
+
+                    <!--A button that links to "movies" page-->
+                    <form action="./movies.html">                         
+                        <input type="submit" value="Find More" />                     
+                    </form>
             </div>
+
+            <!--For Horror movies-->
             <div class="tab-pane fade" id="Horror" role="tabpanel" aria-labelledby="Horror-tab">
-                <div class="row">
-                   <p>sjiADJ</p>
+                <!--Slider for x small screens, instead of showing a picture per line-->
+                <div id="carouselExampleIndicators" class="carousel slide forSmaller" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.imdb.com/title/tt3322940/" target="_blank"><img class="d-block w-100" src="./images/ann.jpg" alt="Anabelle"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img class="d-block w-100" src="./images/conjuction.jpg" alt="conjuring"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img class="d-block w-100" src="./images/db.jpg" alt="Don't Breathe"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt1396484/" target="_blank"><img class="d-block w-100" src="./images/it.jpg" alt="it"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt5814060/" target="_blank"><img class="d-block w-100" src="./images/nun.jpg" alt="The Nun"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt6644200/" target="_blank"><img class="d-block w-100" src="./images/quiet.jpg" alt="A Quiet Place"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt5215952/" target="_blank"><img class="d-block w-100" src="./images/wailing.jpg" alt="The Wailing"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt2184339/" target="_blank"><img class="d-block w-100" src="./images/p2.jpg" alt="The Purge"></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-            </div>
-            <div class="tab-pane fade" id="Romance" role="tabpanel" aria-labelledby="Romance-tab">
-                <div class="row">
-
-                </div>
-            </div>
-            <div class="tab-pane fade" id="SciFic" role="tabpanel" aria-labelledby="SciFic-tab">
-                <div class="row">
-
-                </div>
-            </div>
-            <div class="tab-pane fade" id="Anime" role="tabpanel" aria-labelledby="Anime-tab">
-                <div class="row">
-
-                </div>
-            </div>
-            <div class="tab-pane fade" id="Thrill" role="tabpanel" aria-labelledby="Thrill-tab">
-                <div class="row">
-
-                </div>
+                        
+                        
+                <div class="forBigger">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuring poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1396484/" target="_blank"><img src="./images/it.jpg" alt="IT poster"><figcaption>It (2017)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt3322940/" target="_blank"><img src="./images/ann.jpg" alt="Annabelle poster"><figcaption>Annabelle (2014)</figcaption></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt5814060/" target="_blank"><img src="./images/nun.jpg" alt="The nun poster"><figcaption>The Nun (2018)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt6644200/" target="_blank"><img src="./images/quiet.jpg" alt="A quiet place poster"><figcaption>A Quiet Place (2018)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt5215952/" target="_blank"><img src="./images/wailing.jpg" alt="The wailing poster"><figcaption>The Wailing (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt02184339/" target="_blank"><img src="./images/p2.jpg" alt="The purge poster"><figcaption>The Purge (2013)</figcaption></a>
+                        </div>
+                    </div>
+                    <form action="./movies.html">
+                        <input type="submit" value="Find More"/>
+                    </form>
             </div>
         </div>
+            <div class="tab-pane fade" id="Romance" role="tabpanel" aria-labelledby="Romance-tab">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                    </div>
+                    <form action="./movies.html">                         
+                        <input type="submit" value="Find More"/>                     
+                    </form>
+            </div>
+            <div class="tab-pane fade" id="SciFic" role="tabpanel" aria-labelledby="SciFic-tab">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                    </div>
+                    <form action="./movies.html">                         
+                        <input type="submit" value="Find More" />                     
+                    </form>
+            </div>
+            <div class="tab-pane fade" id="Anime" role="tabpanel" aria-labelledby="Anime-tab">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                    </div>
+                    <form action="./movies.html">                        
+                         <input type="submit" value="Find More" />                     
+                    </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="need">
+        <h2>Need a movie?</h2>
     </section>
 
 </body>
