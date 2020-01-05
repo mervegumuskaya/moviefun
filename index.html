@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/samar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/samar.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
     <title>Movie Fun</title>
@@ -32,30 +33,28 @@
     </header>
    
     <section id="photoSec">
-        <!--For smaller screens, dropdown of genres instead of nav tabs-->
-       
-        <!--For larger screens there will be nav tab for each genre-->
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="All-tab" data-toggle="tab" href="#All" role="tab" aria-controls="All" aria-selected="true">All</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="Horror-tab" data-toggle="tab" href="#Horror" role="tab" aria-controls="Horror" aria-selected="false">Horror</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="Romance-tab" data-toggle="tab" href="#Romance" role="tab" aria-controls="Romance" aria-selected="false">Romance</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="SciFic-tab" data-toggle="tab" href="#SciFic" role="tab" aria-controls="SciFic" aria-selected="false">Science Fiction</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="Anime-tab" data-toggle="tab" href="#Anime" role="tab" aria-controls="Anime" aria-selected="false">Animation</a>
-                </li>
-        </ul>
+        <!--there will be nav tab for each genre-->
+            <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="All-tab" data-toggle="tab" href="#All" role="tab" aria-controls="All" aria-selected="true">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Horror-tab" data-toggle="tab" href="#Horror" role="tab" aria-controls="Horror" aria-selected="false">Horror</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Romance-tab" data-toggle="tab" href="#Romance" role="tab" aria-controls="Romance" aria-selected="false">Romance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="SciFic-tab" data-toggle="tab" href="#SciFic" role="tab" aria-controls="SciFic" aria-selected="false">Fiction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Anime-tab" data-toggle="tab" href="#Anime" role="tab" aria-controls="Anime" aria-selected="false">Anime</a>
+                    </li>
+            </ul>
 
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
-                <div class="forBigger container-fluid">
+                <div class="forBigger">
                     <div class="row">
                         <div class="col-sm-6 col-md-3 ">
                             <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction poster"><figcaption>The Conjuring (2013)</figcaption></a>
@@ -94,6 +93,7 @@
 
             <!--For Horror movies-->
             <div class="tab-pane fade" id="Horror" role="tabpanel" aria-labelledby="Horror-tab">
+                <!--slide for smaller screens-->
                     <div id="carouselExampleIndicators" class="carousel slide forSmaller" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

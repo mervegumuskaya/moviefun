@@ -3,8 +3,8 @@
 }
 
 #photoSec{
-    margin-top:100px;
-    font-size: 1.6em;
+    margin-top:40px;
+    font-size: 1.7em;
 }
 
 #photoSec img{
@@ -21,25 +21,14 @@
     margin-top:30px;
 }
 
+#myTab{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 #photoSec form{
     display: flex;
     justify-content: center;
-}
-
-.forDrop{
-    margin:0 auto;
-    width:70%;
-    display: none;
-    border: 1px #000 solid
-}
-
-.forDrop a:visited{
-    background-color: #fff;
-    color:#000;
-}
-
-.forDrop a:hover{
-    color:#007bff;
 }
 
 .forSmaller{

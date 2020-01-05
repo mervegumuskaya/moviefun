@@ -4,21 +4,12 @@
     }
 }
 
-@media only screen and (max-width:694px){
-    #myTab{
-        display:none;
-    }
-
-    .forDrop{
-        display: flex;
-    }
-}
 
 @media only screen and (max-width:574px){
+    
     .forBigger{
         display:none;
     }
-
     .forSmaller{
         display: block;
         margin-right:30px;
