@@ -1,6 +1,6 @@
-@media only screen and (max-width:1400px){
+@media only screen and (max-width:970px){
     body{
-        font-size: 75%;
+        font-size: 70%;
     }
 }
 
@@ -11,7 +11,8 @@
         display:none;
     }
     .forSmaller{
-        display: block;
-        margin-right:30px;
+        display: flex;
+        margin:0 auto;
+        width:90%;
     }
 }

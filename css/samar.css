@@ -1,19 +1,25 @@
 #HeaderImg{
     width:100%;
+    margin-right:0;
+    margin-left:0;
 }
 
 #photoSec{
-    margin-top:40px;
+    margin-top:70px;
     font-size: 1.7em;
 }
 
 #photoSec img{
-    margin:50px 30px 2px;
+    display: flex;
+    justify-content: center;
+    margin:40px auto 8px;
     width:90%;
+    height:auto;
 }
 
 #photoSec figcaption{
-    margin:10px 30px;
+    margin:0px 25px 20px;
+
 }
 
 #photoSec input{
@@ -24,7 +30,7 @@
 #myTab{
     display:flex;
     justify-content: center;
-    align-items: center;
+    margin:0 10px;
 }
 #photoSec form{
     display: flex;
@@ -33,9 +39,7 @@
 
 .forSmaller{
     display:none;
+    margin-right:23px;;
 }
 
-.forSmaller img{
-    width:100%;
-}
 

@@ -15,3 +15,7 @@ li.active  > a {
 .bg-color-2 {
     background-color: rgb(237,241,245);
 }
+
+.logo{
+    width:150px;
+}
