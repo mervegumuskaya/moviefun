@@ -1,0 +1,22 @@
+@media only screen and (max-width:1140px){
+    body{
+        font-size: 80%;
+    }
+}
+
+
+@media only screen and (max-width:574px){
+    
+    .forBigger{
+        display:none;
+    }
+    .forSmaller{
+        display: flex;
+        margin:0 auto;
+        width:90%;
+    }
+
+    #need{
+        padding:20%;
+    }
+}

@@ -1,0 +1,68 @@
+#HeaderImg{
+    width:100%;
+    margin-right:0;
+    margin-left:0;
+}
+
+#photoSec{
+    margin-top:70px;
+    font-size: 1.4em;
+}
+
+#photoSec img{
+    display: flex;
+    justify-content: center;
+    margin:40px auto 8px;
+    width:90%;
+    height:auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#photoSec img:hover{
+        opacity: 0.3;
+}
+
+#photoSec figcaption{
+    margin:0px 20px 20px;
+
+}
+
+#photoSec input{
+    padding: 7px 25px;
+    margin-top:30px;
+}
+
+#myTab{
+    display:flex;
+    justify-content: center;
+    margin:0 10px;
+}
+#photoSec form{
+    display: flex;
+    justify-content: center;
+}
+
+.forSmaller{
+    display:none;
+    margin-right:23px;;
+}
+
+#need{
+    background-color: #F6F6F6;
+    margin: 100px auto 0;
+    text-align: center;
+    padding:10%;
+}
+
+#need h2{
+    font-size:2em;
+}
+#need p{
+    font-size:1.5em;
+    
+}
+
+
+
+

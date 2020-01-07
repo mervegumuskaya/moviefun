@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/samar.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/responsive.css">
+
     <title>Movie Fun</title>
 </head>
 <body>
     <header>
+        <!--The nav bar-->
         <nav class="navbar navbar-expand-sm navbar-light bg-white py-4 fixed border-bottom">
-            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo"></a>
+            <a class="navbar-brand" href="index.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
             <ul class="navbar navbar-nav ml-auto">
                 <li class="nav-item active"><a class="nav-link px-3" href="./index.html">HOME</a></li>
                 <li class="nav-item"><a class="nav-link px-3" href="./movies.html">MOVIES</a class="nav-link"></li class="nav-item">
@@ -21,7 +29,434 @@
                 <li class="nav-item"><a class="nav-link px-3" href="./contact.html">CONTACT US</a class="nav-link"></li class="nav-item">
             </ul>
         </nav>
+        <!--Gif at the header-->
+        <img id="HeaderImg" src="./images/header.gif">
     </header>
+   
+    <section id="photoSec">
+        <!--there will be nav pill for each genre-->
+            <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="All-tab" data-toggle="tab" href="#All" role="tab" aria-controls="All" aria-selected="true">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Horror-tab" data-toggle="tab" href="#Horror" role="tab" aria-controls="Horror" aria-selected="false">Horror</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Romance-tab" data-toggle="tab" href="#Romance" role="tab" aria-controls="Romance" aria-selected="false">Romance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="SciFic-tab" data-toggle="tab" href="#SciFic" role="tab" aria-controls="SciFic" aria-selected="false">Science Fiction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Anime-tab" data-toggle="tab" href="#Anime" role="tab" aria-controls="Anime" aria-selected="false">Animation</a>
+                    </li>
+            </ul>
+        
+        <div class="tab-content" id="myTabContent">
 
+            <!--For All movies-->
+            <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
+                <!--slide for smaller screens-->
+                <div id="carouselExampleIndicators" class="carousel slide forSmaller" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.imdb.com/title/tt3322940/" target="_blank"><img class="d-block w-100" src="./images/ann.jpg" alt="Anabelle"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt5311514/" target="_blank"><img class="d-block w-100" src="./images/yourname.jpg" alt="your name"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt1951264/" target="_blank"><img class="d-block w-100" src="./images/hunger.jpg" alt="The Hunger Games (2013)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt1661199/" target="_blank"><img class="d-block w-100" src="./images/cin.jpg" alt="Cinderella (2015)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt2674426/" target="_blank"><img class="d-block w-100" src="./images/me.jpg" alt="Me Before You (2016)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt0816692/" target="_blank"><img class="d-block w-100" src="./images/int.jpg" alt="Interstellar (2014)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt5215952/" target="_blank"><img class="d-block w-100" src="./images/wailing.jpg" alt="The Wailing"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt0095327/" target="_blank"><img class="d-block w-100" src="./images/grave.jpg" alt="grave of the fireflies"></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="forBigger container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuction poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt5311514/" target="_blank"><img src="./images/yourname.jpg" alt="your name poster"><figcaption>Your Name (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt1951264/" target="_blank"><img src="./images/hunger.jpg" alt="The Hunger Games (2013)"><figcaption>The Hunger Games (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt2674426/" target="_blank"><img src="./images/me.jpg" alt="Me Before You (2016)"><figcaption>Me Before You (2016)</figcaption></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 ">
+                            <a href="https://www.imdb.com/title/tt1661199/" target="_blank"><img src="./images/cin.jpg" alt="Cinderella (2015)"><figcaption>Cinderella (2015)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt0816692/" target="_blank"><img src="./images/int.jpg" alt="Interstellar (2014)"><figcaption>Interstellar (2014)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="https://www.imdb.com/title/tt0095327/" target="_blank"><img src="./images/grave.jpg" alt="grave of the fireflies"><figcaption>Grave of the Fireflies (1988)</figcaption></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--A button that links to "movies" page-->
+                <form action="./movies.html">                         
+                    <input type="submit" value="Find More" />                     
+                </form>
+            </div>
+
+            <!--For Horror movies-->
+            <div class="tab-pane fade" id="Horror" role="tabpanel" aria-labelledby="Horror-tab">
+                <!--slide for smaller screens-->
+                <div id="carouselExampleIndicators1" class="carousel slide forSmaller" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.imdb.com/title/tt3322940/" target="_blank"><img class="d-block w-100" src="./images/ann.jpg" alt="Anabelle"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img class="d-block w-100" src="./images/conjuction.jpg" alt="conjuring"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img class="d-block w-100" src="./images/db.jpg" alt="Don't Breathe"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt1396484/" target="_blank"><img class="d-block w-100" src="./images/it.jpg" alt="it"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt5814060/" target="_blank"><img class="d-block w-100" src="./images/nun.jpg" alt="The Nun"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt6644200/" target="_blank"><img class="d-block w-100" src="./images/quiet.jpg" alt="A Quiet Place"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt5215952/" target="_blank"><img class="d-block w-100" src="./images/wailing.jpg" alt="The Wailing"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt2184339/" target="_blank"><img class="d-block w-100" src="./images/p2.jpg" alt="The Purge"></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                    <div class="forBigger container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3 ">
+                                <a href="https://www.imdb.com/title/tt1457767/" target="_blank"><img src="./images/conjuction.jpg" alt="The conjuring poster"><figcaption>The Conjuring (2013)</figcaption></a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a href="https://www.imdb.com/title/tt4160708/" target="_blank"><img src="./images/db.jpg" alt="Don't Breathe poster"><figcaption>Don't Breathe (2016)</figcaption></a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a href="https://www.imdb.com/title/tt1396484/" target="_blank"><img src="./images/it.jpg" alt="IT poster"><figcaption>It (2017)</figcaption></a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a href="https://www.imdb.com/title/tt3322940/" target="_blank"><img src="./images/ann.jpg" alt="Annabelle poster"><figcaption>Annabelle (2014)</figcaption></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3 ">
+                                <a href="https://www.imdb.com/title/tt5814060/" target="_blank"><img src="./images/nun.jpg" alt="The nun poster"><figcaption>The Nun (2018)</figcaption></a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a href="https://www.imdb.com/title/tt6644200/" target="_blank"><img src="./images/quiet.jpg" alt="A quiet place poster"><figcaption>A Quiet Place (2018)</figcaption></a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a href="https://www.imdb.com/title/tt5215952/" target="_blank"><img src="./images/wailing.jpg" alt="The wailing poster"><figcaption>The Wailing (2016)</figcaption></a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a href="https://www.imdb.com/title/tt02184339/" target="_blank"><img src="./images/p2.jpg" alt="The purge poster"><figcaption>The Purge (2013)</figcaption></a>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="./movies.html">
+                        <input type="submit" value="Find More"/>
+                    </form>
+            </div>
+
+            <!--For romance movies-->
+            <div class="tab-pane fade" id="Romance" role="tabpanel" aria-labelledby="Romance-tab">
+                <!--slide for smaller screens-->
+                <div id="carouselExampleIndicators2" class="carousel slide forSmaller" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators2" data-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.imdb.com/title/tt2582846/" target="_blank"><img class="d-block w-100" src="./images/stars.jpg" alt="The Fault in Our Stars (2014)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt0414387/" target="_blank"><img class="d-block w-100" src="./images/pride.jpg" alt="Pride &amp; Prejudice (2005)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt2674426/" target="_blank"><img class="d-block w-100" src="./images/me.jpg" alt="Me Before You (2016)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt3783958/" target="_blank"><img class="d-block w-100" src="./images/la.jpg" alt="La La Land (2016)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt1798709/" target="_blank"><img class="d-block w-100" src="./images/her.jpg" alt="Her (2013)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt1661199/" target="_blank"><img class="d-block w-100" src="./images/cin.jpg" alt="Cinderella (2015)"></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="forBigger container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 ">
+                            <a href="https://www.imdb.com/title/tt2582846/" target="_blank"><img src="./images/stars.jpg" alt="The Fault in Our Stars (2014)"><figcaption>The Fault in Our Stars (2014)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt0414387/" target="_blank"><img src="./images/pride.jpg" alt="Pride &amp; Prejudice (2005)"><figcaption>Pride &amp; Prejudice (2005)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt2674426/" target="_blank"><img src="./images/me.jpg" alt="Me Before You (2016)"><figcaption>Me Before You (2016)</figcaption></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 ">
+                            <a href="https://www.imdb.com/title/tt3783958/" target="_blank"><img src="./images/la.jpg" alt="La La Land (2016)"><figcaption>La La Land (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt1798709/" target="_blank"><img src="./images/her.jpg" alt="Her (2013)"><figcaption>Her (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt1661199/" target="_blank"><img src="./images/cin.jpg" alt="Cinderella (2015)"><figcaption>Cinderella (2015)</figcaption></a>
+                        </div>
+                    </div>
+                </div>
+                <form action="./movies.html">                         
+                    <input type="submit" value="Find More"/>                     
+                </form>
+            </div>
+
+            <!--for science fiction-->
+            <div class="tab-pane fade" id="SciFic" role="tabpanel" aria-labelledby="SciFic-tab">
+                <!--slide for smaller screens-->
+                <div id="carouselExampleIndicators3" class="carousel slide forSmaller" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators3" data-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.imdb.com/title/tt1706620/" target="_blank"><img class="d-block w-100" src="./images/snow.jpg" alt="Snowpiercer"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt0945513/" target="_blank"><img class="d-block w-100" src="./images/sc.jpg" alt="Source code"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt0816692/" target="_blank"><img class="d-block w-100" src="./images/int.jpg" alt="Interstellar (2014)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt1375666/" target="_blank"><img class="d-block w-100" src="./images/inception.jpg" alt="Inception (2010)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt1951264/" target="_blank"><img class="d-block w-100" src="./images/hunger.jpg" alt="The Hunger Games (2013)"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt2015381/" target="_blank"><img class="d-block w-100" src="./images/gur.jpg" alt="Guardians of the Galaxy (2014)"></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </div>
+                    <!--For Bigger screens-->
+                    <div class="forBigger container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 ">
+                            <a href="https://www.imdb.com/title/tt1706620/" target="_blank"><img src="./images/snow.jpg" alt="Snowpiercer (2013)"><figcaption>Snowpiercer (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt0945513/" target="_blank"><img src="./images/sc.jpg" alt="Source code"><figcaption>Source Code (2011)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt0816692/" target="_blank"><img src="./images/int.jpg" alt="Interstellar (2014)"><figcaption>Interstellar (2014)</figcaption></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 ">
+                            <a href="https://www.imdb.com/title/tt1375666/" target="_blank"><img src="./images/inception.jpg" alt="Inception (2010)"><figcaption>Inception (2010)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt1951264/" target="_blank"><img src="./images/hunger.jpg" alt="The Hunger Games (2013)"><figcaption>The Hunger Games (2013)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt2015381/" target="_blank"><img src="./images/gur.jpg" alt="Guardians of the Galaxy (2014)"><figcaption>Guardians of the Galaxy (2014)</figcaption></a>
+                        </div>
+                    </div>
+                </div>
+                <form action="./movies.html">                         
+                    <input type="submit" value="Find More"/>                     
+                </form>
+            </div>
+
+            <!--for anime-->
+            <div class="tab-pane fade" id="Anime" role="tabpanel" aria-labelledby="Anime-tab">
+                <!--slide for smaller screens-->
+                <div id="carouselExampleIndicators4" class="carousel slide forSmaller" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="4"></li>
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="5"></li>
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="6"></li>
+                        <li data-target="#carouselExampleIndicators4" data-slide-to="7"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.imdb.com/title/tt0119698/" target="_blank"><img class="d-block w-100" src="./images/mononoke.jpg" alt="princess mononoke"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt5311514/" target="_blank"><img class="d-block w-100" src="./images/yourname.jpg" alt="your name"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt0245429/" target="_blank"><img class="d-block w-100" src="./images/sa.jpg" alt="Spirited away"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt0347149/" target="_blank"><img class="d-block w-100" src="./images/howl.jpg" alt="Howl's moving castle"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt5323662/" target="_blank"><img class="d-block w-100" src="./images/silent.jpg" alt="A silent voice"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.imdb.com/title/tt0095327/" target="_blank"><img class="d-block w-100" src="./images/grave.jpg" alt="grave of the fireflies"></a>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="forBigger container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 ">
+                            <a href="https://www.imdb.com/title/tt0119698/" target="_blank"><img src="./images/mononoke.jpg" alt="princess mononoke poster"><figcaption>Princess Mononoke (1997)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt5311514/" target="_blank"><img src="./images/yourname.jpg" alt="your name poster"><figcaption>Your Name (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt0095327/" target="_blank"><img src="./images/grave.jpg" alt="grave of the fireflies"><figcaption>Grave of the Fireflies (1988)</figcaption></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 ">
+                            <a href="https://www.imdb.com/title/tt5323662/" target="_blank"><img src="./images/silent.jpg" alt="A silent voice"><figcaption>A Silent Voice (2016)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt0347149/" target="_blank"><img src="./images/howl.jpg" alt="Howl's moving castle"><figcaption>Howl's Moving Castle (2004)</figcaption></a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <a href="https://www.imdb.com/title/tt0245429/" target="_blank"><img src="./images/sa.jpg" alt="Spirited away"><figcaption>Spirited Away (2001)</figcaption></a>
+                        </div>
+                    </div>
+                </div>
+                <form action="./movies.html">                         
+                    <input type="submit" value="Find More"/>                     
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="need">
+        <h2>Need a movie?</h2>
+        <p>We have everything you need, and searching for. new or old, whatever you want is here.</p>
+    </section>
+
+    <footer>
+        <h5>Copyright &copy; 2020 mrsm</h5>
+        <ul>
+            <li><a href="https://www.facebook.com/recodedofficial/" class="fa fa-facebook" id="facebook"></a></li>
+            <li><a href="https://twitter.com/recodedofficial?lang=en" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.instagram.com/recodedofficial/" class="fa fa-instagram" id="insta"></a></li>
+        </ul>
+    </footer>
+    
 </body>
 </html>

@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
 body {
     font-family: "Open Sans";
     color: #737373;
@@ -13,6 +19,7 @@ li.active  > a {
 .bg-color-2 {
     background-color: rgb(237,241,245);
 }
+<<<<<<< HEAD
 /*rasha Style 
    News Page */
 /* header section */
@@ -99,4 +106,37 @@ a:hover{
     font-size: 0.7em;
     padding: 5px;
     border-bottom: 1px solid #a3a3a3;
+=======
+
+.logo{
+    width:150px;
+}
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    padding:20px 50px 0px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer h5{
+
+    font-size:1em;
+}
+footer li{
+    display: inline;
+    margin-left:20px;
+}
+
+footer .fa{
+    font-size: 1.5em;
+}
+
+footer .fa:hover {
+    opacity: 0.5;
+    text-decoration: none;
+>>>>>>> homepage
 }
