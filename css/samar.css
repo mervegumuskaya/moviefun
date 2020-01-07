@@ -15,10 +15,16 @@
     margin:40px auto 8px;
     width:90%;
     height:auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#photoSec img:hover{
+        opacity: 0.3;
 }
 
 #photoSec figcaption{
-    margin:0px 25px 20px;
+    margin:0px 20px 20px;
 
 }
 

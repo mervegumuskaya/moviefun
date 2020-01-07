@@ -30,15 +30,20 @@ footer ul{
     list-style: none;
 }
 
+footer h5{
+
+    font-size:1em;
+}
 footer li{
     display: inline;
     margin-left:20px;
 }
 
 footer .fa{
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
-#facebook{
-    color:#fff;
+footer .fa:hover {
+    opacity: 0.5;
+    text-decoration: none;
 }
