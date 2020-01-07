@@ -1,6 +1,6 @@
-@media only screen and (max-width:970px){
+@media only screen and (max-width:1140px){
     body{
-        font-size: 70%;
+        font-size: 80%;
     }
 }
 
@@ -14,5 +14,9 @@
         display: flex;
         margin:0 auto;
         width:90%;
+    }
+
+    #need{
+        padding:20%;
     }
 }

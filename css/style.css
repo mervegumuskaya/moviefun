@@ -19,3 +19,26 @@ li.active  > a {
 .logo{
     width:150px;
 }
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    padding:20px 50px 0px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    display: inline;
+    margin-left:20px;
+}
+
+footer .fa{
+    font-size: 24px;
+}
+
+#facebook{
+    color:#fff;
+}
