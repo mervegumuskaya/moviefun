@@ -49,17 +49,24 @@
 }
 
 #need{
-    background-color: #F6F6F6;
-    margin: 100px auto 0;
+    background-image: url('../img/skyblue.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #44318d;
+    height:100%;
+    margin: 0 auto;
     text-align: center;
-    padding:10%;
+    padding: 3% 4% 15%;
+    font-weight: bold;
+    color: white;
 }
 
 #need h2{
-    font-size:2em;
+    font-size:1.7em;
 }
 #need p{
-    font-size:1.5em;
+    font-size:1.3em;
     
 }
 
