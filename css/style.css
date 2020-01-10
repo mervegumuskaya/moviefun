@@ -1,5 +1,5 @@
 body {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     color: #737373;
 }
 li.active  > a {
@@ -10,3 +10,25 @@ li.active  > a {
     background-color: rgb(237,241,245);
 }
 
+.py-6 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+.pt-6 {
+    padding-top: 5rem !important;
+}
+
+.pb-6 {
+    padding-bottom: 5rem !important;
+}
+
+.hr-1 {
+    width: 10%;
+    border-top: 1px solid;
+}
+
+.hr-2 {
+    width: 20%;
+    border-top: 1px solid;
+}
