@@ -205,3 +205,27 @@ footer .fa:hover {
 .fa-instagram{
     background: #d83f87;
 }
+
+/* Merve's section */
+.py-6 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+.pt-6 {
+    padding-top: 5rem !important;
+}
+
+.pb-6 {
+    padding-bottom: 5rem !important;
+}
+
+.hr-1 {
+    width: 10%;
+    border-top: 1px solid;
+}
+
+.hr-2 {
+    width: 20%;
+    border-top: 1px solid;
+}
