@@ -5,8 +5,9 @@
 }
 
 body {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     color: #737373;
+
 }
 .container-fluid{
     padding-left: 0 !important;
@@ -112,13 +113,15 @@ a:hover{
     border-bottom: 1px solid #a3a3a3;}
 
 .logo{
-    width:25%;
+    width:48px;
+    height: 48px;
 }
 
 footer{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding:20px 50px 0px;
+    background-color: #343a40;
 }
 
 footer ul{
@@ -135,14 +138,55 @@ footer li{
 }
 
 footer .fa{
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 footer .fa:hover {
     opacity: 0.5;
     text-decoration: none;
 }
+.social-network a {
+  color:white; 
+  border-radius: 50%;
+  background-color: gray;
+  padding: 10px;
+}
+.social-network li a:hover{
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+/* general style color and font for the whole page */
+#photoSec{
+    background-color: #44318d;
+}
+#photoSec ul{
+    margin-left:0;
+    margin-right:0;
+    padding: 5px;
+    background-color: #343a40;
+}
+#photoSec a {
+    color: #f6f6f6;
+}
+#photoSec a:hover{
+    color:#969696; 
+}
 
-.bg-white{
-    background-color: #2a1b3d !important;
+#photoSec h2{
+    color: white;
+    font-style: italic;
+    background-color: #d83f87;
+    padding: 10px;
+}
+/* change the nav pill link */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: #44318d;
 }
