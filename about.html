@@ -13,19 +13,24 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-white py-4 fixed border-bottom">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="./img/logo.png" alt="logo"></a>
-            <ul class="navbar navbar-nav ml-auto">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar navbar-nav ml-auto pr-5">
                 <li class="nav-item"><a class="nav-link px-3" href="./index.html">HOME</a></li>
                 <li class="nav-item"><a class="nav-link px-3" href="./movies.html">MOVIES</a class="nav-link"></li class="nav-item">
                 <li class="nav-item"><a class="nav-link px-3" href="./news.html">NEWS</a class="nav-link"></li class="nav-item">
                 <li class="nav-item active"><a class="nav-link px-3" href="./about.html">ABOUT US</a class="nav-link"></li class="nav-item">
                 <li class="nav-item"><a class="nav-link px-3" href="./contact.html">CONTACT US</a class="nav-link"></li class="nav-item">
             </ul>
+        </div>
         </nav>
     </header>
     <main>
-        <div class="bg-color-2">
+        <div class="bg-color-2 text-white">
             <div class="container">
                 <div class="row py-6">
                     <div class="col-sm-12">
@@ -45,30 +50,30 @@
                 </div>
             </div>
         </div>
-        <div class="bg-color-2">
+        <div class="bg-color-2 text-white">
             <div class="container">
                 <div class="row py-6">
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img src="./img/design.png" class="w-25 mb-3" alt="design">
+                        <div class="col-sm-4">
+                            <div class="text-center" id="icon">
+                                <img src="./img/design.png" class="w-25 mb-3" alt="design">
+                            </div>
+                            <h5 class="text-center">MOVIE DESIGN</h5><hr>
+                            <p class="text-align px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, maiores?<br>Distinctio perspiciatis repellat eaque consequatur sit, reprehenderit eius officiis enim repudiandae </p>
                         </div>
-                        <h5 class="text-center">MOVIE DESIGN</h5><hr>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, maiores?<br>Distinctio perspiciatis repellat eaque consequatur sit, reprehenderit eius officiis enim repudiandae </p>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img src="./img/worst_movies.png" class="w-25 mb-3" alt="worst movies">
+                        <div class="col-sm-4">
+                            <div class="text-center" id="icon">
+                                <img src="./img/worst_movies.png" class="w-25 mb-3 icon" alt="worst movies">
+                            </div>
+                            <h5 class="text-center">WORST MOVIES</h5><hr>
+                            <p class="text-align px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, maiores?<br>Distinctio perspiciatis repellat eaque consequatur sit, reprehenderit eius officiis enim repudiandae </p>   
                         </div>
-                        <h5 class="text-center">WORST MOVIES</h5><hr>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, maiores?<br>Distinctio perspiciatis repellat eaque consequatur sit, reprehenderit eius officiis enim repudiandae </p>   
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="text-center">
-                            <img src="./img/best_movies.png" class="w-25 mb-3" alt="best movies">
+                        <div class="col-sm-4">
+                            <div class="text-center" id="icon">
+                                <img src="./img/best_movies.png" class="w-25 mb-3" alt="best movies">
+                            </div>
+                            <h5 class="text-center">BEST MOVIES</h5><hr>
+                            <p class="text-align px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, maiores?<br>Distinctio perspiciatis repellat eaque consequatur sit, reprehenderit eius officiis enim repudiandae </p>
                         </div>
-                        <h5 class="text-center">BEST MOVIES</h5><hr>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, maiores?<br>Distinctio perspiciatis repellat eaque consequatur sit, reprehenderit eius officiis enim repudiandae </p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -116,7 +121,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-color-2">
+        <div class="bg-color-2 text-white">
             <div class="container">
                 <div class="row py-6">
                     <div class="col-sm-3">
@@ -171,9 +176,9 @@
                 </div>
             </div>
         </div>
-        <footer>
+        <footer class="py-5">
             <h5>Copyright &copy; 2020 mrsm</h5>
-            <ul>
+            <ul class="social-network">
                 <li><a href="https://www.facebook.com/recodedofficial/" class="fa fa-facebook" id="facebook"></a></li>
                 <li><a href="https://twitter.com/recodedofficial?lang=en" class="fa fa-twitter"></a></li>
                 <li><a href="https://www.instagram.com/recodedofficial/" class="fa fa-instagram" id="insta"></a></li>

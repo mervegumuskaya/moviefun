@@ -6,9 +6,8 @@
 
 body {
     font-family: 'Open Sans';
-    color: #737373;
-
 }
+
 .container-fluid{
     padding-left: 0 !important;
     padding-right:0 !important;
@@ -229,4 +228,8 @@ footer .fa:hover {
     width: 20%;
     border-top: 1px solid;
     margin: auto;
+}
+
+#icon img:hover{
+    opacity: 0.3;
 }

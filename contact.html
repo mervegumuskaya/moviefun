@@ -13,23 +13,23 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo" class="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar navbar-nav ml-auto pr-5">
-                <li class="nav-item active"><a class="nav-link px-3" href="./index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="./index.html">HOME</a></li>
                 <li class="nav-item"><a class="nav-link px-3" href="./movies.html">MOVIES</a class="nav-link"></li class="nav-item">
                 <li class="nav-item"><a class="nav-link px-3" href="./news.html">NEWS</a class="nav-link"></li class="nav-item">
                 <li class="nav-item"><a class="nav-link px-3" href="./about.html">ABOUT US</a class="nav-link"></li class="nav-item">
-                <li class="nav-item"><a class="nav-link px-3" href="./contact.html">CONTACT US</a class="nav-link"></li class="nav-item">
+                <li class="nav-item active"><a class="nav-link px-3" href="./contact.html">CONTACT US</a class="nav-link"></li class="nav-item">
             </ul>
         </div>
         </nav>
     </header>
-    <div class="bg-color-2">
+    <div class="bg-color-2 text-white">
         <div class="container">
             <div class="row py-6">
                 <div class="col-sm-12">
@@ -43,26 +43,51 @@
         <div class="container">
             <div class="row py-6">
                 <div class="col-sm-4">
-                    <h2 class="text-center">Contact Info:</h2>
-                    <p class="text-justify">There are many variations of passages of Lo Ipsum 
+                    <h2 class="text-align pb-1">Contact Info:</h2>
+                    <p class="text-align">There are many variations of passages of Lo Ipsum 
                         available, but the majority have suffered alteration in 
-                        some form, by injected hu.</p>
-                    <p>Address: 17 Street Name here Office, 
-                        80 Istanbul TR</p>
+                        some form, by injected.</p>
+                    <p>Address: Street Name here Office, 
+                    Istanbul TR</p>
                     <p>Phone: +90 225 887 89 66<br>
                        Email: Movie@Fun.com</p>
                 </div>
-                <form action="">
-                    <div class="col-sm-8">
-
+                <div class="col-sm-8 px-5">
+                    <form action="">   
+                        <div class="form-row py-3">
+                            <div class="col-sm-5">
+                              <input type="text" class="form-control" placeholder=" Name">
+                            </div>
+                            <div class="col-sm-7">
+                              <input type="text" class="form-control" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="form-row pb-3">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="form-row pb-2">
+                            <div class="col-sm-12">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-secondary mb-2">Send Message</button>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <footer>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d10517.178094504448!2d28.977458069056823!3d41.02926458595864!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1578690938988!5m2!1str!2str" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <footer class="py-5">
         <h5>Copyright &copy; 2020 mrsm</h5>
-        <ul>
+        <ul class="social-network">
             <li><a href="https://www.facebook.com/recodedofficial/" class="fa fa-facebook" id="facebook"></a></li>
             <li><a href="https://twitter.com/recodedofficial?lang=en" class="fa fa-twitter"></a></li>
             <li><a href="https://www.instagram.com/recodedofficial/" class="fa fa-instagram" id="insta"></a></li>
