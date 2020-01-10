@@ -37,7 +37,7 @@ article{
     width: 100%;
     height: 90%;
 }
- img:hover {
+ img.fullImage:hover {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }
@@ -70,7 +70,7 @@ a:hover{
 .side-bar{
     padding: 20px 40px;
 }
-.side-bar hr{
+.sidebar-hr{
     width: 15%;
     margin: 0;
 }
@@ -196,7 +196,7 @@ footer .fa:hover {
     background-color: hsla(0,0%,100%,.2);
     transition: background-color .3s .2s;
 }
-.fa-facebook{
+.fa-facebook,.fa-facebook-f{
     background-color:#3a559f;
 }
 .fa-twitter{
@@ -223,9 +223,11 @@ footer .fa:hover {
 .hr-1 {
     width: 10%;
     border-top: 1px solid;
+    margin: auto;
 }
 
 .hr-2 {
     width: 20%;
     border-top: 1px solid;
+    margin: auto;
 }
