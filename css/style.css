@@ -16,6 +16,7 @@ li.active  > a {
     border-bottom:1px solid gray;
  }
 
+
 .bg-color-2 {
     background-color: rgb(237,241,245);
 }
@@ -104,10 +105,10 @@ a:hover{
     color: #737373;
     font-size: 0.7em;
     padding: 5px;
-    border-bottom: 1px solid #a3a3a3;
+    border-bottom: 1px solid #a3a3a3;}
 
 .logo{
-    width:150px;
+    width:25%;
 }
 
 footer{
@@ -136,4 +137,8 @@ footer .fa{
 footer .fa:hover {
     opacity: 0.5;
     text-decoration: none;
+}
+
+.bg-white{
+    background-color: #2a1b3d !important;
 }
