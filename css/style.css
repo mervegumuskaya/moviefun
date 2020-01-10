@@ -15,11 +15,12 @@ body {
 }
 li.active  > a {
     border-bottom:1px solid gray;
+    font-weight: 700;
  }
 
 
 .bg-color-2 {
-    background-color: rgb(237,241,245);
+    background-color: #44318d ; /*rgb(237,241,245);*/
 }
 /*rasha Style 
    News Page */
@@ -60,7 +61,7 @@ article{
 }
 a:hover{
     text-decoration: none;
-    color:#a8a8a8;
+    color:#44318d;
 }
 /* detail page */ 
 .bg-color-3{
@@ -113,10 +114,12 @@ a:hover{
     border-bottom: 1px solid #a3a3a3;}
 
 .logo{
-    width:48px;
-    height: 48px;
+    width:60px;
+    height: 60px;
 }
-
+.navbar-brand{
+    margin-left:5px;
+}
 footer{
     display:flex;
     justify-content: space-around;
@@ -148,7 +151,6 @@ footer .fa:hover {
 .social-network a {
   color:white; 
   border-radius: 50%;
-  background-color: gray;
   padding: 10px;
 }
 .social-network li a:hover{
@@ -189,4 +191,17 @@ footer .fa:hover {
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #44318d;
+}
+.navbar .nav-item .nav-link.active {
+    background-color: hsla(0,0%,100%,.2);
+    transition: background-color .3s .2s;
+}
+.fa-facebook{
+    background-color:#3a559f;
+}
+.fa-twitter{
+    background-color:#1da1f3;
+}
+.fa-instagram{
+    background: #d83f87;
 }

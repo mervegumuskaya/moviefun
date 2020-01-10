@@ -22,3 +22,15 @@
 
 
 }
+@media only screen and (max-width:425px){
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:3450px){
+    .pr-div{
+        padding-left: 2px;
+    }
+}
