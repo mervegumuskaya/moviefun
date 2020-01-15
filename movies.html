@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.js"></script>
+    <title>Movie Fun</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar navbar-nav ml-auto pr-5">
+                    <li class="nav-item"><a class="nav-link px-3" href="./index.html">HOME</a></li>
+                    <li class="nav-item active"><a class="nav-link px-3" href="./movies.html">MOVIES</a class="nav-link"></li class="nav-item">
+                    <li class="nav-item"><a class="nav-link px-3" href="./news.html">NEWS</a class="nav-link"></li class="nav-item">
+                    <li class="nav-item"><a class="nav-link px-3" href="./about.html">ABOUT US</a class="nav-link"></li class="nav-item">
+                    <li class="nav-item"><a class="nav-link px-3" href="./contact.html">CONTACT US</a class="nav-link"></li class="nav-item">
+                        <li class="nav-item"><a class="nav-link px-3" href="#"></a class="nav-link">
+                            <div class="dropdown mbottom">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="sign-in" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Sign In
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="sign-in">
+                                    <form class="px-4 py-3">
+                                      <div class="form-group">
+                                        <label for="exampleDropdownFormEmail1">Email address</label>
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="exampleDropdownFormPassword1">Password</label>
+                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                      </div>
+                                      <div class="form-group">
+                                        <div class="form-check">
+                                          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                          <label class="form-check-label" for="dropdownCheck">
+                                            Remember me
+                                          </label>
+                                        </div>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Sign in</button>
+                                    </form>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                    <a class="dropdown-item" href="#">Forgot password?</a>
+                                </div>
+                             </div>
+                        </li class="nav-item">
+                    </ul>
+            </div>
+                 
+        </nav>
+    </header>
+    <div class="container py-6 mt-5">
+        <div class="row movie-cards">
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="./images/doctorwho.jpg" alt="Orphan 55">
+                    <div class="card-body">
+                            <h5 class="card-title">DW: Orphan55</h5>
+                            <p class="card-text">Having decided that everyone could do with a holiday, the Doctor takes her companions to a luxury resort for a spot of rest and relaxation. However, they discover the place where they are having a break is hiding a number of deadly secrets. What are the ferocious monsters that are attacking Tranquillity Spa?</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                 <a href="./1.html"  class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </a>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted"> 46min </small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="./images/yourname.jpg" alt="Jack&Jill">
+                    <div class="card-body">
+                            <h5 class="card-title">Jack and Jill</h5>
+                            <p class="card-text"> Family guy Jack Sadelstein prepares for the annual event he dreads: the Thanksgiving visit of his fraternal twin sister, the needy and passive-aggressive Jill, who then refuses to leave. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary "><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">1h 31min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="./images/grave.jpg" alt="The Ridiculous 6">
+                    <div class="card-body">
+                            <h5 class="card-title">The Ridiculous 6 </h5>
+                            <p class="card-text"> An outlaw who was raised by Native Americans discovers that he has five half-brothers; together the men go on a mission to find their wayward, deadbeat dad.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">1h 59min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="https://m.media-amazon.com/images/M/MV5BMzk0NzkyNDk2M15BMl5BanBnXkFtZTgwNDczOTU3NzE@._V1_SY1000_CR0,0,657,1000_AL_.jpg" alt="Dirty Grandpa">
+                    <div class="card-body">
+                            <h5 class="card-title">Dirty Grandpa</h5>
+                            <p class="card-text"> Right before his wedding, an uptight guy is tricked into driving his grandfather, a lecherous former Army Lieutenant Colonel, to Florida for Spring Break. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">1h 42min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+        </div>  <!-- end row -->
+
+        <div class="row movie-cards">
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="https://m.media-amazon.com/images/M/MV5BMTM1NjE0NDA0MV5BMl5BanBnXkFtZTcwODE4NDg1Mw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="The Last Airbender">
+                    <div class="card-body">
+                            <h5 class="card-title">The Last Airbender</h5>
+                            <p class="card-text"> Follows the adventures of Aang, a young successor to a long line of Avatars, who must master all four elements and stop the Fire Nation from enslaving the Water Tribes and the Earth Kingdom. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm bt-font" role="group" aria-label="Basic example">
+                                <button type="button" class="btn bt-sm btn-secondary bt-font">
+                                   <span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">1h 43min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="./images/db.jpg" alt="The Human Centipede">
+                    <div class="card-body">
+                            <h5 class="card-title">The Human Centipede</h5>
+                            <p class="card-text"> Taking inspiration from The Human Centipede films, the warden of a notorious and troubled prison looks to create a 500-person human centipede as a solution to his problems. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">1h 42min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img  imheight card-img" src="./images/int.jpg" alt="Transformers: Age of Extinction">
+                    <div class="card-body">
+                            <h5 class="card-title">Transformers</h5>
+                            <p class="card-text"> When humanity allies with a bounty hunter in pursuit of Optimus Prime, the Autobots turn to a mechanic and his family for help. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 45min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="https://m.media-amazon.com/images/M/MV5BMTY1ODY2MTgwM15BMl5BanBnXkFtZTgwOTY3Nzc3NzE@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="London Has Fallen ">
+                    <div class="card-body">
+                            <h5 class="card-title">London Has Fallen </h5>
+                            <p class="card-text"> In London for the Prime Minister's funeral, Mike Banning is caught up in a plot to assassinate all the attending world leaders. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 3min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+        </div>  <!-- end row -->
+
+        <div class="row movie-cards">
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="./images/2.jpg" alt="Fifty Shades of Grey">
+                    <div class="card-body">
+                            <h5 class="card-title">Fifty Shades of Grey </h5>
+                            <p class="card-text"> Literature student Anastasia Steele's life changes forever when she meets handsome, yet tormented, billionaire Christian Grey. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 3min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="./images/silent.jpg" alt="Zoolander 2">
+                    <div class="card-body">
+                            <h5 class="card-title">Zoolander 2</h5>
+                            <p class="card-text"> Derek and Hansel are lured into modelling again, in Rome, where they find themselves the target of a sinister conspiracy. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted"> 1h 41min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="./images/me.jpg" alt="Suicide Squad">
+                    <div class="card-body">
+                            <h5 class="card-title">Suicide Squad</h5>
+                            <p class="card-text">A secret government agency recruits some of the most dangerous incarcerated super-villains to form a defensive task force. Their first mission: save the world from the apocalypse. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 3min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="https://m.media-amazon.com/images/M/MV5BODhiMzkwYTctYzgwOC00MDM2LWExYjQtMzY4MDljZjQ3M2RmXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="The Dirt">
+                    <div class="card-body">
+                            <h5 class="card-title">The Dirt</h5>
+                            <p class="card-text"> Based on the bestselling autobiography from Mötley Crüe, the film is an unflinching tale of success and excess as four misfits rise from the streets of Hollywood to the heights of international fame. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">1h 47min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+        </div>  <!-- end row -->
+
+        <div class="row movie-cards">
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="./images/pride.jpg" alt="Ben-Hur">
+                    <div class="card-body">
+                            <h5 class="card-title">Ben-Hur</h5>
+                            <p class="card-text"> Judah Ben-Hur, a prince falsely accused of treason by his adopted brother, an officer in the Roman army, returns to his homeland after years at sea to seek revenge, but finds redemption. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 3min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="./images/sc.jpg" alt="film">
+                    <div class="card-body">
+                            <h5 class="card-title">After Earth</h5>
+                            <p class="card-text"> A crash landing leaves Kitai Raige and his father Cypher stranded on Earth, a millennium after events forced humanity's escape. With Cypher injured, Kitai must embark on a perilous journey to signal for help. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">1h 40min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img card-img imheight" src="./images/conjuction.jpg" alt="Rings">
+                    <div class="card-body">
+                            <h5 class="card-title">Rings </h5>
+                            <p class="card-text"> A young woman finds herself on the receiving end of a terrifying curse that threatens to take her life in 7 days.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 3min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="https://m.media-amazon.com/images/M/MV5BNWU1ZjFjMTctYjA5ZC00YTBkLTkzZjUtZWEyMjgxY2MxYWM4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Fantastic Four">
+                    <div class="card-body">
+                            <h5 class="card-title">Fantastic Four</h5>
+                            <p class="card-text"> A group of astronauts gain superpowers after a cosmic radiation exposure and must use them to oppose the plans of their enemy, Doctor Victor Von Doom. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 3min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+        </div>  <!-- end row -->
+
+        <div class="row movie-cards">
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="./images/4.jpg" alt="Sex and the City 2 ">
+                    <div class="card-body">
+                            <h5 class="card-title">Sex and the City 2 </h5>
+                            <p class="card-text"> While wrestling with the pressures of life, love, and work in Manhattan, Carrie, Miranda, and Charlotte join Samantha for a trip to Abu Dhabi (United Arab Emirates), where Samantha's ex is filming a new movie. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 3min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="https://m.media-amazon.com/images/M/MV5BOTRjMTczMGItMmYxMi00ZThlLTg2ZjAtODgyZTNkN2VmMDlhXkEyXkFqcGdeQXVyNzQwNjY4NTg@._V1_SY1000_CR0,0,666,1000_AL_.jpg" alt="The Happytime Murders ">
+                    <div class="card-body">
+                            <h5 class="card-title">Happy time Murder</h5>
+                            <p class="card-text"> When the puppet cast of a '90s children's TV show begin to get murdered one by one, a disgraced LAPD detective-turned-private eye puppet takes on the case. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 3min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img imheight card-img" src="https://m.media-amazon.com/images/M/MV5BMzEzMjkwMjc3NV5BMl5BanBnXkFtZTgwMzc0NjY5ODE@._V1_SY1000_CR0,0,675,1000_AL_.jpg" alt="Nine Lives ">
+                    <div class="card-body">
+                            <h5 class="card-title">Nine Lives </h5>
+                            <p class="card-text"> A stuffy businessman finds himself trapped inside the body of his family's cat. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary bt-font"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 3min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+            <div class="col-md-3 d-flex">
+                <div class="card shadow-sm">
+                    <img class="bd-placeholder-img card-img imheight" src="https://m.media-amazon.com/images/M/MV5BMTg4NzQ3NDM1Nl5BMl5BanBnXkFtZTcwNjEzMjM3OA@@._V1_SY1000_CR0,0,674,1000_AL_.jpg" alt="film">
+                    <div class="card-body">
+                            <h5 class="card-title">Movie 43</h5>
+                            <p class="card-text"> A series of interconnected short films follows a washed-up producer as he pitches insane story lines featuring some of the biggest stars in Hollywood. </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bt-font"><span class="bt-font">Details</span> </button>
+                                <button type="button" class="btn btn-secondary"><i class="fa fa-heart-o"></i></button>
+                            </div>                        
+                        <small class="text-muted">2h 3min</small>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- finish   col-md- 3 -->
+
+        </div>  <!-- end row -->
+
+        
+    </div>
+
+    <footer class="py-5">
+        <h5>Copyright &copy; 2020 mrsm</h5>
+        <ul class="social-network">
+            <li><a href="https://www.facebook.com/recodedofficial/" class="fa fa-facebook" id="facebook"></a></li>
+            <li><a href="https://twitter.com/recodedofficial?lang=en" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.instagram.com/recodedofficial/" class="fa fa-instagram" id="insta"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

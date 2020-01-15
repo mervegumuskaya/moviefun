@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/samar.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Movie Fun</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar navbar-nav ml-auto pr-5">
+                <li class="nav-item"><a class="nav-link px-3" href="./index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="./movies.html">MOVIES</a class="nav-link"></li class="nav-item">
+                <li class="nav-item active"><a class="nav-link px-3" href="./news.html">NEWS</a class="nav-link"></li class="nav-item">
+                <li class="nav-item"><a class="nav-link px-3" href="./about.html">ABOUT US</a class="nav-link"></li class="nav-item">
+                <li class="nav-item"><a class="nav-link px-3" href="./contact.html">CONTACT US</a class="nav-link"></li class="nav-item">
+                    <li class="nav-item"><a class="nav-link px-3" href="#"></a class="nav-link">
+                        <div class="dropdown mbottom">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="sign-in" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Sign In
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="sign-in">
+                                <form class="px-4 py-3">
+                                  <div class="form-group">
+                                    <label for="exampleDropdownFormEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleDropdownFormPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                  </div>
+                                  <div class="form-group">
+                                    <div class="form-check">
+                                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                      <label class="form-check-label" for="dropdownCheck">
+                                        Remember me
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                <a class="dropdown-item" href="#">Forgot password?</a>
+                            </div>
+                         </div>
+                    </li class="nav-item">
+                </ul>
+        </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <section class="bg-color-2">
+       <div class="container">
+        <div class="row">
+            <div class="col text-center px-5 py-5">
+                <h1 class="text-white">Latest News</h1>
+                <p class="text-white">get the latest news about movies right form one place </p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="pt-5 bg-news">
+        <div class="container">
+            <div class="row py-3 mt-3">
+                <div class="col-md-10 offset-md-1">
+                    <article>
+                        <div class="row">
+                            <div class="col-12">
+                                    <img class="img-fluid fullImage" src="./img/ramb.jpeg" alt="oscar-prize">
+
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-2 offset-md-1 col-2 offset-1 pr-div border-right">
+                                <h2 class="h2-style">11</h2>
+                                <h6>Jan 2020</h6> 
+                            </div>
+                            <div class="col-md-9 col-9">
+                                    <h5 class="h5-style text-capitalize">The worst film you can ever seen in 2019  </h5>
+                              <p><span class="ml-2"><i class="fa fa-heart-o"></i></span> Like <span class="mr-1 ml-3"><i class='fa fa-comment'></i> </span>Comment</p>
+                            </div>
+                        </div>
+                        <div class="row px-5 py-3">
+                            <div class="col">
+                                    <p class="p-article text-justify"> All the movies was taken from IMDb. which means they've taken the lowest rank during the year. And here is the list :
+                                       Rambo:(lastblood),Arctic Dogs,Cats, Replicas,Playmobil: The Movie,A Madea Family Funeral,Hellboy (2019),After (2019),The Hustle (I) (2019),Serenity (2019),UglyDolls (2019)Men in Black: International (2019),
+                                    </p>
+                                    <a class="a-article" href="./detail.html">Read more</a>
+                            </div>
+                        </div>
+                        
+                    </article>
+ 
+                </div>
+            </div>
+            <div class="row py-3 mt-3">
+                    <div class="col-md-10 offset-md-1">
+                        <article>
+                            <div class="row">
+                                <div class="col-12">
+                                        <img class="img-fluid fullImage" src="./img/note.jpeg" alt="oscar-prize">
+    
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-2 offset-md-1 col-2 offset-1 border-right">
+                                    <h2 class="h2-style">3</h2>
+                                    <h6>April 2020</h6> 
+                                </div>
+                                <div class="col-md-9 col-9">
+                                        <h5 class="h5-style text-capitalize">The 10 Worst Netflix Original Movies Since it Launched </h5>
+                                  <p><span class="ml-2"><i class="fa fa-heart-o"></i></span> Like <span class="mr-1 ml-3"><i class='fa fa-comment'></i> </span>Comment</p>
+                                </div>
+                            </div>
+                            <div class="row px-5 py-3">
+                                <div class="col">
+                                        <p class="p-article text-justify">Netflix may have produced some truly great original content, but some of its original movies are really just plain bad.
+                                            the list contains: Death Note (2017) (4.5),
+                                            The Week Of (2018) (5.1), Sandy Wexler (2017) (5.1),How It Ends (2018) (5.0),The Ridiculous 6 (2015) (4.8),IO (2019) (4.7),I Am The Pretty Thing That Lives In The House (2016) (4.5)
+                                            Secret Obsession (2019),The Open House (2018) (3.2)
+                                        </p>
+                                        <a class="a-article" href="./detail.html">Read more</a>
+                                </div>
+                            </div>
+                            
+                        </article>
+     
+                    </div>
+            </div>
+            <div class="row py-3 mt-3">
+                    <div class="col-md-10 offset-md-1">
+                        <article>
+                            <div class="row">
+                                <div class="col-12">
+                                        <img class="img-fluid fullImage" src="./img/11.png" alt="oscar-prize">
+    
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-2 offset-md-1 col-2 offset-1 border-right">
+                                    <h2 class="h2-style text-capitalize">5</h2>
+                                    <h6>Jan 2020</h6> 
+                                </div>
+                                <div class="col-md-9 col-9">
+                                        <h5 class="h5-style">10 worst films during the last 10 years </h5>
+                                        <p><span class="ml-2"><i class="fa fa-heart-o"></i></span> Like <span class="mr-1 ml-3"><i class='fa fa-comment'></i> </span>Comment</p>
+                                </div>
+                            </div>
+                            <div class="row px-5 py-3">
+                                <div class="col">
+                                        <p class="p-article text-justify"> As we all know every year has its own films which they had a good expections but after we saw them we are really regret about wasting our time watching them.So to save your time please don't watch these movies: 
+                                               Suicide Squad, The Ridiculous,Dirty Grandpa,The Last Airbender,The EMOJI movie,TIE: London has fallen & Gods of Egypt,Zoolander. 
+                                        </p>
+                                        <a class="a-article" href="./detail.html">Read more</a>
+                                </div>
+                            </div>
+                            
+                        </article>
+     
+                    </div>
+                </div>
+        </div>
+    </section>
+    </div>
+
+    <footer class="py-5">
+        <h5>Copyright &copy; 2020 mrsm</h5>
+        <ul class="social-network">
+            <li><a href="https://www.facebook.com/recodedofficial/" class="fa fa-facebook" id="facebook"></a></li>
+            <li><a href="https://twitter.com/recodedofficial?lang=en" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.instagram.com/recodedofficial/" class="fa fa-instagram" id="insta"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

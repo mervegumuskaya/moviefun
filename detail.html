@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/samar.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Movie Fun</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar navbar-nav ml-auto pr-5">
+                <li class="nav-item"><a class="nav-link px-3" href="./index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="./movies.html">MOVIES</a class="nav-link"></li class="nav-item">
+                <li class="nav-item active"><a class="nav-link px-3" href="./news.html">NEWS</a class="nav-link"></li class="nav-item">
+                <li class="nav-item"><a class="nav-link px-3" href="./about.html">ABOUT US</a class="nav-link"></li class="nav-item">
+                <li class="nav-item"><a class="nav-link px-3" href="./contact.html">CONTACT US</a class="nav-link"></li class="nav-item">
+                    <li class="nav-item"><a class="nav-link px-3" href="#"></a class="nav-link">
+                        <div class="dropdown mbottom">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="sign-in" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Sign In
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="sign-in">
+                                <form class="px-4 py-3">
+                                  <div class="form-group">
+                                    <label for="exampleDropdownFormEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleDropdownFormPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                  </div>
+                                  <div class="form-group">
+                                    <div class="form-check">
+                                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                      <label class="form-check-label" for="dropdownCheck">
+                                        Remember me
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                <a class="dropdown-item" href="#">Forgot password?</a>
+                            </div>
+                         </div>
+                    </li class="nav-item">
+                </ul>
+        </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <section class="bg-color-2">
+       <div class="container">
+        <div class="row">
+            <div class="col text-center px-5 py-5">
+                <h1 class="text-white">News Detail</h1>
+                <p class="text-white">you will get unique details of all news  </p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="pt-5 bg-news">
+        <div class="container">
+            <div class="row py-3 mt-3">
+                <div class="col-md-8 col-sm-12">
+                    <article class="bg-color-3">
+                        <div class="row">
+                            <div class="col-12">
+                                    <img class="img-fluid fullImage" src="./img/oscar.jpg" alt="oscar-prize">
+
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-2 offset-md-1 col-2 offset-1 offset-sm-1 col-sm-2 border-right">
+                                <h2 class="h2-style">11</h2>
+                                <h6>Jan 2020</h6> 
+                            </div>
+                            <div class="col-md-9 col-9">
+                                    <h5 class="h5-style">The comlete guide about the nomination of 2020 Ocars </h5>
+                              <p><span class="ml-2"><i class="far fa-heart"></i></span> Like <span class="mr-1 ml-3"><i class='far fa-comment-alt'></i> </span>Comment</p>
+                            </div>
+                        </div>
+                        <div class="row px-5 py-3">
+                            <div class="col">
+                                    <p class="text-justify"> 
+
+                                  
+                                 Aliquam nulla facilisi cras fermentum odio. At volutpat diam ut venenatis tellus. Quam vulputate dignissim suspendisse in est. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Scelerisque eleifend donec pretium vulputate sapien nec. Nulla pellentesque dignissim enim sit amet venenatis. Gravida neque convallis a cras semper. Sed enim ut sem viverra aliquet eget sit amet tellus. Scelerisque purus semper eget duis at. Et molestie ac feugiat sed. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Augue eget arcu dictum varius duis at consectetur lorem. Consectetur adipiscing elit pellentesque habitant. Ut tortor pretium viverra suspendisse pote.
+                                </p>
+                                <p class="text-justify">Mauctor neque vitae. Habitasse platea dictumst quisque sagittis purus. Risus quis varius quam quisque id diam vel. Pellentesque habitant morbi tristique senectus. Malesuada fames ac turpis egestas sed tempus urna et. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Mi quis hendrerit dolor mpulvinar mattis nun
+                                    </p>
+                                    <div class="bg-white p-3">
+                                <p class="p-article text-justify">Magna fringilla urna porttitor rhoncus viverra nibh cras pulvinar mattis nunc.que id diam vel. Pellentesque habitant morbi tristique senectus. Malesuada fames ac turpis egestas sed tempus urna et. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Mi quis hendrerit dolor mpulvinar matti
+                                    </p>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-12">
+                                        <img class="img-fluid fullImage" src="./img/2019.jpg" alt="films">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-12">
+                                               <p class="text-justify">     
+                                                  Aliquam nulla facilisi cras fermentum odio. At volutpat diam ut venenatis tellus. Quam vulputate dignissim suspendisse in est. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Scelerisque eleifend donec pretium vulputate sapien nec. Nulla pellentesque dignissim enim sit amet venenatis. Gravida neque convallis a cras semper. Sed enim ut sem viverra aliquet eget sit amet tellus. Scelerisque purus semper eget duis at. Et molestie ac feugiat sed. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Augue eget arcu dictum varius duis at consectetur lorem. Consectetur adipiscing elit pellentesque habitant. Ut tortor pretium viverra suspendisse pote.
+                                              </p>
+                                        </div>
+                                    </div>
+                                 </div>
+                               
+                                         
+                                        
+                        </div>
+                        
+                    </article>
+ 
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="side-bar bg-white">
+                    <div class="search mb-5">
+                        <p>Search</p>
+                        <hr class="sidebar-hr">
+                        <form action="" class="pt-3">
+                        <input class="bg-light"type="text" placeholder="Search for">
+                        </form>
+                    </div>
+                    <div class="categories pt-3">
+                        <p>Categories</p>
+                        <hr class="sidebar-hr">
+                        <ul>
+                            <li><a href="">Action <span> (100)</span></a></li>
+                            <li><a href="">Horor <span> (75)</span></a></li>
+                            <li> <a href="">History <span> (75)</span></a></li>
+                            <li><a href="">Drama <span> (75)</span></a></li>
+                            <li><a href="">Romance <span> (75)</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="latest-post pt-3">
+                        <div class="row">
+                            <div class="col">
+                                <p>Latest Posts</p>
+                                <hr class="sidebar-hr">
+                                    <ul class="list-unstyled post-style">
+                                            <li class="media">
+                                              <img class="mr-3" src="http://lorempixel.com/80/80/" alt="image">
+                                              <div class="media-body">
+                                                <h5 class="mt-0 mb-1">List-based media </h5>
+                                                Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.                                              </div>
+                                            </li>
+                                            <li class="media my-4">
+                                              <img class="mr-3" src="http://lorempixel.com/80/80/" alt=" image">
+                                              <div class="media-body">
+                                                <h5 class="mt-0 mb-1">List-based media </h5>
+                                               Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                              </div>
+                                            </li>
+                                            <li class="media">
+                                              <img class="mr-3" src="http://lorempixel.com/80/80/" alt="image">
+                                              <div class="media-body">
+                                                <h5 class="mt-0 mb-1">List-based media </h5>
+                                                Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.                                              </div>
+                                            </li>
+                                          </ul>
+                            </div>
+                        </div>
+                          
+                    </div>
+                    <div class="tags mb-5">
+                        <p>Tags</p>
+                        <hr class="sidebar-hr">
+                        <div class="row">
+                            <div class="col">
+                               <a href="">Documentary</a>
+                               <a href="">Horor</a>
+                               <a href="">Action</a>
+                               <a href="">Drama</a>
+                               <a href="">Romance</a>
+                               <a href="">Sience fiction</a>
+                               <a href="">History</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    </div>
+    <footer class="py-5">
+        <h5>Copyright &copy; 2020 mrsm</h5>
+        <ul class="social-network">
+            <li><a href="https://www.facebook.com/recodedofficial/" class="fa fa-facebook" id="facebook"></a></li>
+            <li><a href="https://twitter.com/recodedofficial?lang=en" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.instagram.com/recodedofficial/" class="fa fa-instagram" id="insta"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

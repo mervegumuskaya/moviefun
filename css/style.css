@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Open Sans';
+    overflow-x: hidden;
+}
+
+.container-fluid{
+    padding-left: 0 !important;
+    padding-right:0 !important;
+}
+li.active  > a {
+    border-bottom:1px solid gray;
+    font-weight: 700;
+ }
+
+
+.bg-color-2 {
+    background-color: #44318d ; /*rgb(237,241,245);*/
+}
+/*rasha Style 
+   News Page */
+/* header section */
+
+/* article section */
+.bg-news{
+    background-color: #f6f6f6;
+}
+article{
+    background-color: white;
+}
+.fullImage{
+    width: 100%;
+    height: 90%;
+}
+ img.fullImage:hover ,#photoSec img:hover, #need img:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+.h2-style{
+    color:#606060;
+    font-weight: 600;
+    line-height: 1;
+}
+.h5-style{
+    color: #747474;
+}
+.p-article{
+    color: #a8a8a8;
+    font-size: 15px;
+    line-height: 24px;
+}
+.a-article{
+    color: #a8a8a8;
+    font-size: 12px;    
+    border-bottom:1px solid #a8a8a8;
+}
+a:hover{
+    text-decoration: none;
+    color:#44318d;
+}
+/* detail page */ 
+.bg-color-3{
+    background-color:  #f6f6f6;
+}
+.side-bar{
+    padding: 20px 40px;
+}
+.sidebar-hr{
+    width: 15%;
+    margin: 0;
+}
+.search input{
+    background: #f6f6f6;
+    border: 0;
+    color: #969696;
+    font-size: 13px;
+    line-height: 36px;
+    padding: 0 15px;
+    width: 100%;
+    border-radius: 5px;
+}
+.categories > ul{
+ list-style-type: none;
+ display: inline;
+ 
+}
+.categories > ul li{
+    margin-top: 0 !important;
+    
+   }
+.categories > ul a{
+    color:#737373;
+    font-weight: 400;
+    font-size :0.7em;
+}
+/* latest post */
+.post-style{
+    font-weight: 500;
+    font-size: 0.8em;
+}
+.post-p{
+    font-weight: 600;
+    font-size: 1em;
+}
+.tags a{
+    color: #737373;
+    font-size: 0.7em;
+    padding: 5px;
+    border-bottom: 1px solid #a3a3a3;}
+
+.logo{
+    width:80px;
+}
+.navbar-brand{
+    margin-left:5px;
+}
+footer{
+    display:flex;
+    justify-content: space-around;
+    padding:20px 30px 0px;
+    background-color: #343a40;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer h5{
+    color:white;
+    font-size:1em;
+}
+footer li{
+    display: inline;
+}
+
+footer .fa{
+    font-size: 1.2em;
+}
+
+footer .fa:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+.social-network a {
+  color:white; 
+  border-radius: 50%;
+  padding: 10px;
+}
+.social-network li a:hover{
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+/* general style color and font for the whole page */
+#photoSec{
+    background-color: #44318d;
+}
+#photoSec ul{
+    margin-left:0;
+    margin-right:0;
+    padding: 5px;
+    background-color: #343a40;
+}
+#photoSec a {
+    color: #f6f6f6;
+}
+#photoSec a:hover{
+    color:#969696; 
+}
+
+#photoSec h2{
+    color: white;
+    font-style: italic;
+    background-color: #d83f87;
+    padding: 10px;
+}
+/* change the nav pill link */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: #44318d;
+}
+.navbar .nav-item .nav-link.active {
+    background-color: hsla(0,0%,100%,.2);
+    transition: background-color .3s .2s;
+}
+.fa-facebook,.fa-facebook-f{
+    background-color:#3a559f;
+}
+.fa-twitter{
+    background-color:#1da1f3;
+}
+.fa-instagram{
+    background: #d83f87;
+}
+
+/* Merve's section */
+.py-6 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+
+.pt-6 {
+    padding-top: 5rem !important;
+}
+
+.pb-6 {
+    padding-bottom: 5rem !important;
+}
+
+.hr-1 {
+    width: 10%;
+    border-top: 1px solid;
+    margin: auto;
+}
+
+.hr-2 {
+    width: 20%;
+    border-top: 1px solid;
+    margin: auto;
+}
+
+#icon img:hover{
+    opacity: 0.3;
+}
+
+.view-details {
+    color: white;
+}
+
+.comment-wrapper .panel-body {
+    max-height:650px;
+    overflow:auto;
+}
+
+.comment-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    margin-bottom:25px;
+    margin-right:5px;
+}
+
+.media-body{
+    margin-left:10px;
+}
+.card-text{
+    height:210px;
+    font-size: .85em;
+}
+p.card-text{
+    overflow: hidden;
+}
+
+.mbottom{
+    margin-bottom:12px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0 !important;
+    left:unset !important;
+}
+
+.card-title{
+    font-size: 1.25em;
+    font-weight: 500;
+    height:30px;
+}
+
